@@ -5,8 +5,7 @@
 <html>
 <head>
 	<title>Home</title>
-	
-	
+
 	<link rel="stylesheet" type="text/css" href="resources/css/home.css">
 	<script type="text/javascript" src="resources/js/home.js"></script>
 
