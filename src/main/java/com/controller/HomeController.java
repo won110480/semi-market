@@ -36,4 +36,32 @@ public class HomeController {
         return "home";
     }
 
+    @RequestMapping(value = "/Join", method = RequestMethod.GET)
+    public String Join(Locale locale, Model model) {
+        logger.info("Welcome home! The client locale is {}.", locale);
+
+        Date date = new Date();
+        DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+
+        String formattedDate = dateFormat.format(date);
+
+        model.addAttribute("serverTime", formattedDate);
+
+        return "Join";
+    }
+
+    @RequestMapping(value = "/board/Item1_1", method = RequestMethod.GET)
+    public String Item1_1(Locale locale, Model model) {
+        logger.info("Welcome home! The client locale is {}.", locale);
+
+        Date date = new Date();
+        DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+
+        String formattedDate = dateFormat.format(date);
+
+        model.addAttribute("serverTime", formattedDate);
+
+        return "Item1_1";
+    }
+
 }
