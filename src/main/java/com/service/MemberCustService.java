@@ -1,14 +1,17 @@
 package com.service;
 
-import com.model.BoardVO;
-import com.model.Criteria;
-
-import java.util.List;
+import com.google.gson.Gson;
+import com.mapper.MemberCustMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class MemberCustService {
 
-	// 게시판 리스트
-	public List<BoardVO> boardList() throws Exception;
-	
+    @Autowired
+    MemberCustMapper mapper;
+
+    // 테스트 리스트
+    public String memberCust() {
+        return new Gson().toJson(mapper.memberCust());
+    }
 
 }

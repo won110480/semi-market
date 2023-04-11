@@ -2,64 +2,31 @@ package com.model;
 
 public class MemberCustVO {
 
-	private int number;
-	private String subject;
-	private String name;
-	private String dateinserted;
-	private String content;
-	private int cnt;
+    private String id;
+    private String pw;
+    private String zipCode;
 
-	public int getNumber() {
-		return number;
-	}
-	public void setNumber(int number) {
-		this.number = number;
-	}
-	public String getSubject() {
-		return subject;
-	}
-	public void setSubject(String subject) {
-		this.subject = subject;
-	}
+    public String getId() {
+        return id;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getPw() {
+        return pw;
+    }
 
+    public void setPw(String pw) {
+        this.pw = pw;
+    }
 
+    public String getZipCode() {
+        return zipCode;
+    }
 
-	public String getContent() {
-		return content;
-	}
-
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-	public int getCnt() {
-		return cnt;
-	}
-
-	public void setCnt(int cnt) {
-		this.cnt = cnt;
-	}
-
-	public String getDateinserted() {
-		return dateinserted;
-	}
-
-	public void setDateinserted(String dateinserted) {
-		this.dateinserted = dateinserted;
-	}
-	
-	@Override
-	public String toString() {
-		return "BoardVO [number=" + number + ", subject=" + subject + ", name=" + name + ", dateinserted="
-				+ dateinserted + ", content=" + content + ", cnt=" + cnt + "]";
-	}
-	
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
+    }
 }

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
-  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.mapper.BoardMapper">
-	
-	<!-- 페이징 처리하지 않은 전체 목록 리스트 -->
-	<select id="memberCust" resultType="com.model.BoardVO">
-	
-		select * from MEMBER_CUST;
-		
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.MemberCustMapper">
+
+    <!-- 페이징 처리하지 않은 전체 목록 리스트 -->
+    <select id="memberCust" resultType="com.model.MemberCustVO">
+		SELECT ID, PW, ZIP_CODE FROM MEMBER_CUST;
 	</select>
 
-	
 </mapper>
