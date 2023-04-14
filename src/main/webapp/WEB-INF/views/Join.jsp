@@ -32,25 +32,25 @@
   </section>
   
   <section>
-    <form name="login" action="index.html" method="post">
+    <form name="join" action="어디에 데이터를 쌓아야 할지 모름" method="post">
       아이디<br>
-      <input type="text" name="user_ID" placeholder="아이디 입력를 입력해주세요" >
+      <input type="text" name="user_ID" placeholder="아이디 입력를 입력해 주세요" required="required"/>
       <input type="button" name="user_IDcheck" value="아이디 중복 확인">
       <br><br>
 
       비밀번호<br> 
-      <input type="password" name="user_PW1" value="123456"><br>
+      <input type="password" name="user_PW1" value="123456" required="required"/><br>
 
       비밀번호 재확인<br>
-      <input type="password" name="user_PW2" value="123456">
+      <input type="password" name="user_PW2" value="123456" required="required"/>
       <input type="button" name="user_PWcheck" value="비밀번호 확인">
       <br><br>
 
-      이름<br>  <input type="text" name="user_name" value="">
+      이름<br>  <input type="text" name="user_name" value="" required="required"/>
       <br><br>
 
       휴대전화<br>
-      <input type="text" name="user_phone" placeholder="010-****-****">
+      <input type="text" name="user_phone" placeholder="010-****-****" required="required"/>
       <br><br>
 
       주소<br>
@@ -83,7 +83,7 @@
       </div>
       <br><br>
 
-      이메일<br><input type="email" name="user_email" placeholder="email@gmail.com">
+      이메일<br><input type="email" name="user_email" placeholder="email@gmail.com" required="required"/>
       <br><br>
 
       성별<br>
@@ -93,8 +93,8 @@
       <input type="radio" name="gender" value="m" id="woman">
       <br><br>
 
-      <input type="submit" name="" value="회원가입">
-      <input type="reset" name="" value="다시쓰기">
+      <input type="submit" name="" value="회원 가입">
+      <input type="reset" name="" value="다시 쓰기">
 
     </form>
   </section>

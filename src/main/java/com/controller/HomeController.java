@@ -36,6 +36,8 @@ public class HomeController {
         return "home";
     }
 
+/*
+
     @RequestMapping(value = "/Join", method = RequestMethod.GET)
     public String Join(Locale locale, Model model) {
         logger.info("Welcome home! The client locale is {}.", locale);
@@ -63,5 +65,7 @@ public class HomeController {
 
         return "Item1_1";
     }
+
+*/
 
 }

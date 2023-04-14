@@ -4,7 +4,15 @@ public class MemberCustVO {
 
     private String id;
     private String pw;
+    private String name;
+    private String phone;
     private String zipCode;
+    private String addr;
+    private String addrDetail;
+    private String email;
+    private String gender;
+    private String joinDate;
+
 
     public String getId() {
         return id;
@@ -22,11 +30,67 @@ public class MemberCustVO {
         this.pw = pw;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     public String getZipCode() {
         return zipCode;
     }
 
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
+    }
+
+    public String getAddr() {
+        return addr;
+    }
+
+    public void setAddr(String addr) {
+        this.addr = addr;
+    }
+
+    public String getAddrDetail() {
+        return addrDetail;
+    }
+
+    public void setAddrDetail(String addrDetail) {
+        this.addrDetail = addrDetail;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getJoinDate() {
+        return joinDate;
+    }
+
+    public void setJoinDate(String joinDate) {
+        this.joinDate = joinDate;
     }
 }
