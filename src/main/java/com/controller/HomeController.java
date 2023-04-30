@@ -22,8 +22,10 @@ public class HomeController {
     /**
      * Simply selects the home view to render by returning its name.
      */
+
+    /* 메인화면 */
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String home(Locale locale, Model model) {
+    public String SeeUShopMain(Locale locale, Model model) {
         logger.info("Welcome home! The client locale is {}.", locale);
 
         Date date = new Date();
@@ -33,11 +35,10 @@ public class HomeController {
 
         model.addAttribute("serverTime", formattedDate);
 
-        return "home";
+        return "SeeUShopMain";
     }
 
-/*
-
+    /* 회원가입 */
     @RequestMapping(value = "/Join", method = RequestMethod.GET)
     public String Join(Locale locale, Model model) {
         logger.info("Welcome home! The client locale is {}.", locale);
@@ -52,8 +53,9 @@ public class HomeController {
         return "Join";
     }
 
-    @RequestMapping(value = "/board/Item1_1", method = RequestMethod.GET)
-    public String Item1_1(Locale locale, Model model) {
+    /* 회원목록 */
+    @RequestMapping(value = "/membercustlist", method = RequestMethod.GET)
+    public String memberCustList(Locale locale, Model model) {
         logger.info("Welcome home! The client locale is {}.", locale);
 
         Date date = new Date();
@@ -63,9 +65,37 @@ public class HomeController {
 
         model.addAttribute("serverTime", formattedDate);
 
-        return "Item1_1";
+        return "memberCustList";
     }
 
-*/
+    /* 회원 상세 */
+    @RequestMapping(value = "/membercustlistdetail", method = RequestMethod.GET)
+    public String memberCustListList(Locale locale, Model model) {
+        logger.info("Welcome home! The client locale is {}.", locale);
+
+        Date date = new Date();
+        DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+
+        String formattedDate = dateFormat.format(date);
+
+        model.addAttribute("serverTime", formattedDate);
+
+        return "memberCustListDetail";
+    }
+
+    /* 상품 상세 */
+    @RequestMapping(value = "/itemdetail", method = RequestMethod.GET)
+    public String itemDetail(Locale locale, Model model) {
+        logger.info("Welcome home! The client locale is {}.", locale);
+
+        Date date = new Date();
+        DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+
+        String formattedDate = dateFormat.format(date);
+
+        model.addAttribute("serverTime", formattedDate);
+
+        return "itemDetail";
+    }
 
 }

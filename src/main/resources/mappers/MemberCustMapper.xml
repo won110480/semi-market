@@ -9,6 +9,15 @@
 		SELECT ID, PW, NAME, PHONE, ZIP_CODE, ADDR, ADDR_DETAIL, EMAIL, GENDER, JOIN_DATE FROM MEMBER_CUST;
 	</select>
 
+
+    <!-- ITEM -->
+    <select id="item" resultType="com.model.itemVO">
+		SELECT CODE, NAME, TYPE, PRICE, COUNT FROM ITEM;
+	</select>
+
+
+
+
 </mapper>
 
 

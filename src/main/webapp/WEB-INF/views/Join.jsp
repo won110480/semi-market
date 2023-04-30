@@ -32,7 +32,7 @@
   </section>
   
   <section>
-    <form name="join" action="어디에 데이터를 쌓아야 할지 모름" method="post">
+    <form name="join" action="JoinOk.jsp" method="post">
       아이디<br>
       <input type="text" name="user_ID" placeholder="아이디 입력를 입력해 주세요" required="required"/>
       <input type="button" name="user_IDcheck" value="아이디 중복 확인">

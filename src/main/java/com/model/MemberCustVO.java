@@ -94,3 +94,4 @@ public class MemberCustVO {
         this.joinDate = joinDate;
     }
 }
+

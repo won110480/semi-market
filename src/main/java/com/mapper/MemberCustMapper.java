@@ -1,6 +1,7 @@
 package com.mapper;
 
 import com.model.MemberCustVO;
+import com.model.itemVO;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
@@ -16,7 +17,14 @@ public class MemberCustMapper {
 
     //전체 목록 리스트
     public List<MemberCustVO> memberCust() {
+        System.out.println("step3 : " + namespace + ".memberCust");
         return sqlSession.selectList(namespace + ".memberCust");
     }
+/*
+
+    public itemList<itemVO> itemList() {
+        return sqlSession.selectList(namespace + ".itemList");
+    }
+*/
 
 }

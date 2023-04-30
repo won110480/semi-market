@@ -61,11 +61,15 @@
     <button class="tablinks" onclick="openTab(event, 'Tab3')">Food</button>
 </div>
 
+
 <!-- 탭 내용 -->
 <div id="Tab1" class="tabcontent">
+
+    <form action="itemForm.jsp">
+
     <table style="table-layout:fixed;">
         <tr><!-- 첫번째 줄 시작 -->
-            <td> <input type="checkbox" name="1_1box" value="1_1box"> <br>
+            <td> <input type="checkbox" id="shoes_chunkyheel_sneakers" name="1_1box" value="1_1box"> <br>
                 <img alt="p_o" src="resources/img/shoes/chunkyheel_sneakers_28800.png" style="max-width: 300px; height: auto;"> <br>
                 <h3>item : 통굽힐 스니커즈 <br> price : 28,800원</h3>
             </td>
@@ -160,6 +164,19 @@
         </tr>
     </table>
 </div>
+
+    <input type="submit" value="선택">
+</form>
+
+
+<%
+    String[] itemList = request.getParameterValues("itemForm");
+    if (itemList != null) {
+        for (int i = 0; i < itemList.length; i++) {
+            out.println(itemList[i] + "<br>");
+        }
+    }
+%>
 
 
 

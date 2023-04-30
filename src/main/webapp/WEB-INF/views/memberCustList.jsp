@@ -14,12 +14,69 @@
 </style>
 
 	<title>회원 목록</title>
+
+	<%--<script>
+		$(document).ready(function(){
+
+			$("h3").click(function(){
+
+				$.ajax({
+
+					url : "a12_data.jsp",
+					dataType : "json",
+					success : function(data){
+
+
+					}
+				});
+			});
+		});
+
+	</script>--%>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+
+		function cust_view() {
+			$.ajax({
+				url: "/cust_member/list", // a.jsp 의 제이슨오브젝트값을 가져옴
+				type: "get",
+				dataType: "json", // 데이터 타입을 제이슨 꼭해야함, 다른방법도 2가지있음
+				data : {},
+				success: function () {
+					console.log("success");
+				},
+				error: function () {
+					console.log("error");
+				},
+				complete: function () {
+					console.log("complete");
+				}
+			});
+
+		}
+
+	</script>
+
+
+
+
+
+
 </head>
 <body>
+
+
+<input type="button" onclick="cust_view()" id="btn_cust" value="회원 정보 보기">
+<div id="con"></div>
 
 <table border = "1">
 
 	<b1> 회원 목록 </b1>
+
 
 	<th>체크박스</th>
 	<th>No.</th>

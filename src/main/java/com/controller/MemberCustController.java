@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/membercust")
+@RequestMapping("/cust_member")
 public class MemberCustController {
 
     @Autowired
@@ -19,4 +19,16 @@ public class MemberCustController {
         return service.memberCust();
     }
 
+
+/*
+    //ITEM 목록
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String item() {
+        return service.item();
+    }
+*/
+
+
 }
+
+

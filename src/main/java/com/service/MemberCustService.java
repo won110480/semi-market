@@ -13,7 +13,20 @@ public class MemberCustService {
 
     // 테스트 리스트
     public String memberCust() {
-        return new Gson().toJson(mapper.memberCust());
+        String result = new Gson().toJson(mapper.memberCust());
+
+        return result;
+    }
+/*
+
+    // ITEM 리스트
+    public String itemList() {
+
+        String result = new Gson().toJson(mapper.itemList());
+
+        return result;
     }
 
+*/
 }
+
